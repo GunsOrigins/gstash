@@ -180,7 +180,7 @@ if ('fonts' in document) {
   window.addEventListener('keydown', (ev) => {
     if (ev.key === '.') {
       location.href =
-        'https://github.com/ryanccn/ryanccn.dev/blob/main/' + inputPath;
+        'https://github.com/GunsOrigins/gstash/blob/main/' + inputPath;
     }
   });
 })();

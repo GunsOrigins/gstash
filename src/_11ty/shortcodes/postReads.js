@@ -4,7 +4,7 @@ const { cyan, blue } = require('kleur/colors');
 module.exports = async (originalUrl) => {
   console.log(`${cyan('[data]')} Fetching reads for ${blue(originalUrl)}`);
 
-  const url = `https://plausible.io/api/v1/stats/aggregate?site_id=ryanccn.dev&period=12mo&metrics=pageviews&filters=${encodeURIComponent(
+  const url = `https://plausible.io/api/v1/stats/aggregate?site_id=gstash.org&period=12mo&metrics=pageviews&filters=${encodeURIComponent(
     `event:page==${originalUrl}` +
       (originalUrl.endsWith('/')
         ? `\|${originalUrl.substring(0, originalUrl.length - 1)}`

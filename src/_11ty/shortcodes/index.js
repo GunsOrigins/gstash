@@ -7,7 +7,7 @@ const simpleicon = require('./simpleicon');
 /**
  * @param {string} path
  */
-const absoluteUrl = (path) => new URL(path, 'https://ryanccn.dev').toString();
+const absoluteUrl = (path) => new URL(path, 'https://gstash.org').toString();
 
 /** @param {import('@11ty/eleventy/src/UserConfig')} eleventyConfig */
 module.exports = (eleventyConfig) => {

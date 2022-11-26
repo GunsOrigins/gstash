@@ -108,13 +108,13 @@ const makeImage = async (data) => {
                       {
                         type: 'span',
                         props: {
-                          children: 'Ryan Cao',
+                          children: 'GunsOrigins',
                           style: { fontWeight: 700, marginRight: '0.625rem' },
                         },
                       },
                       {
                         type: 'span',
-                        props: { children: '· ryanccn.dev' },
+                        props: { children: '· gstash.org' },
                       },
                     ],
                     style: {
