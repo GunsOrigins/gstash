@@ -40,7 +40,7 @@
     "ohmyfetch": "^0.4.21",
     "p-limit": "^4.0.0",
     "postcss": "^8.4.19",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "satori": "^0.0.44",
     "sharp": "^0.31.2",
