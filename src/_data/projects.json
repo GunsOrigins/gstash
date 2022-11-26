@@ -3,7 +3,7 @@
     {
       "name": "realget programming language",
       "description": "A hobby programming language I made.",
-      "github": "realget-lang/realget",
+      "github": "realget-lang/realget-llvm",
       "featured": true
     }
   ]
