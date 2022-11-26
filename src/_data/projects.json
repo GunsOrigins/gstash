@@ -1,0 +1,10 @@
+{
+  "projects": [
+    {
+      "name": "realget programming language",
+      "description": "A hobby programming language I made.",
+      "github": "realget-lang/realget",
+      "featured": true
+    }
+  ]
+}

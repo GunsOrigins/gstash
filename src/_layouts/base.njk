@@ -1,0 +1,99 @@
+---
+navLinks:
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /posts/
+
+eleventyComputed:
+  socialImg: "{{ domain }}/previews/{{ title | slugify }}.png"
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="icon" href="/icons/transparent.png" />
+    <link rel="apple-touch-icon" href="/icons/solid.png" />
+    <link rel="canonical" href="https://gstash.org{{ page.url }}" />
+    <meta name="title" content="{{ title }}" />
+    <meta name="description" content="GunsOrigins' personal website" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="GunsOrigins' personal website" />
+
+    <link rel="stylesheet" href="/assets/tailwind.css?v={{ gitRev }}" />
+    <style>{{ fontStyles | safe }}</style>
+
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter/Inter-roman.latin.var.woff2?v=20221008172130" crossorigin="anonymous" />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/satoshi/Satoshi-Variable.latin.woff2?v=20221008172130" crossorigin="anonymous" />
+
+    {% if includePrismCSS %}
+    <link rel="stylesheet" href="/assets/prism.css?v={{ gitRev }}" />
+    {% endif %}
+
+    <script data-input-path="{{ page.inputPath }}">{{ inlinedScript | safe }}</script>
+
+    {% if inProduction %}
+    <script
+      defer
+      data-domain="ryanccn.dev"
+      data-api="/sus/event"
+      src="/sus/script.js"
+    ></script>
+    {% endif %}
+  </head>
+
+  <body>
+    <header
+      class="mb-6 flex w-full flex-none flex-col py-6 md:mb-0 md:mr-20 md:w-fit md:max-w-[22.5%] md:py-0"
+    >
+      <a href="/" class="font-satoshi text-xl font-bold mb-8">
+        <h1>Ryan Cao</h1>
+      </a>
+
+      <div class="md:mb-12 flex-col gap-2 flex">
+        {% for link in navLinks %}
+        <a
+          href="{{ link.url }}"
+          class="font-medium transition-colors {% if link.url === page.url -%} text-blue-500 dark:text-blue-300 {%- else -%} link-colors {%- endif %}"
+        >
+          {{ link.title }}
+        </a>
+        {% endfor %}
+
+        <div class="mt-6 flex flex-wrap items-center gap-2">
+          
+          <a rel="me" href="https://github.com/ryanccn" class="rounded p-1 hover:brightness-90 transition-all">
+            {% simpleicon "github", "block h-5 w-5 fill-github dark:fill-white" %}
+          </a>
+          <a rel="me" href="https://wetdry.world/@gorigins" class="rounded p-1 hover:brightness-90 transition-all">
+            {% simpleicon "mastodon", "block h-5 w-5 fill-mastodon" %}
+          </a>
+          <button type="button" data-theme-toggle aria-label="Change theme" class="rounded p-1 hover:brightness-90 transition-all">
+            <svg class="block h-5 w-5" />
+          </button>
+        </div>
+      </div>
+
+      <p class="hidden text-xs text-zinc-500 md:block">
+        Code licensed under MIT, content licensed under CC by-SA 4.0
+      </p>
+    </header>
+
+    <div class="flex flex-1 flex-col">
+      <main class="flex flex-col">
+        {{ content | safe }}
+      </main>
+
+      <footer
+        class="mt-24 block w-full max-w-[30ch] self-center text-center text-xs text-zinc-500 md:hidden"
+      >
+        Code licensed under MIT, content licensed under CC by-SA 4.0
+      </footer>
+    </div>
+  </body>
+</html>

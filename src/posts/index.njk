@@ -1,0 +1,9 @@
+---
+layout: 'base'
+title: 'Posts'
+permalink: '/posts/'
+override:tags:
+---
+
+{% set postslist = collections.posts | reverse %}
+{% include "postslist.njk" %}
