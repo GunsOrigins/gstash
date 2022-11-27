@@ -24,6 +24,11 @@ eleventyComputed:
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="GunsOrigins' personal website" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta property="og:image" content="{{ socialImg }}" />
+    <meta name="twitter:image" content="{{ socialImg }}" />
 
     <link rel="stylesheet" href="/assets/tailwind.css?v={{ gitRev }}" />
     <style>{{ fontStyles | safe }}</style>
