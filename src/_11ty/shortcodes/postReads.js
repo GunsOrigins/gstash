@@ -1,3 +1,4 @@
+//TODO: Remove this since I don't really need it.
 const EleventyFetch = require('@11ty/eleventy-fetch');
 const { cyan, blue } = require('kleur/colors');
 

@@ -73,6 +73,12 @@ const FONTS = [
     style: 'italic',
     data: await readFile(join(FONTS_DIR, 'Satoshi-Black.otf')),
   },
+  {
+    name: 'Skip Std-B',
+    weight: 500,
+    style: 'normal',
+    data: await readFile(join(FONTS_DIR, 'FOT-SkipStd-B.otf'))
+  },
 ];
 
 const makeImage = async (data) => {
@@ -90,7 +96,7 @@ const makeImage = async (data) => {
             props: {
               children: data.title,
               style: {
-                fontFamily: 'Satoshi',
+                fontFamily: 'Skip Std-B',
                 fontWeight: 800,
                 fontSize: '80px',
               },

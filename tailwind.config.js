@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         satoshi: ['Satoshi', ...defaultTheme.fontFamily.sans],
+        switzer: ['Switzer', ...defaultTheme.fontFamily.sans],
       },
 
       typography: {

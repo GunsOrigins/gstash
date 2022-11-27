@@ -165,8 +165,13 @@ if ('fonts' in document) {
     'Inter',
     "url('/assets/fonts/inter/Inter-roman.var.woff2?v=20221008172130') format('woff2')"
   );
+  
+  let switzerVar = new FontFace(
+    'Switzer',
+    "url('/assets/fonts/switzer/Switzer-Variable.woff2) format('woff2'), url(/assets/fonts/switzer/Switzer-Variable.woffs) format('woff')"
+  )
 
-  Promise.all([satoshiVar.load(), interVar.load()]).then((fonts) => {
+  Promise.all([satoshiVar.load(), interVar.load(),switzerVar.load()]).then((fonts) => {
     fonts.forEach((font) => document.fonts.add(font));
   });
 }
