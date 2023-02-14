@@ -32,7 +32,7 @@
     "html-minifier": "^4.0.0",
     "image-size": "^1.0.2",
     "kleur": "^4.1.5",
-    "linkedom": "^0.14.20",
+    "linkedom": "^0.14.22",
     "lucide-static": "^0.101.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.5",
