@@ -2058,10 +2058,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lucide-static@^0.101.0:
-  version "0.101.0"
-  resolved "https://registry.yarnpkg.com/lucide-static/-/lucide-static-0.101.0.tgz#435c39780f28215b8803a4675cbab52be2a23725"
-  integrity sha512-uizNodr88Q9KpSf7vpTQ2mr+Fgp9fxeT7RzoCzpmPFca9eGx2Yp+01e8dd0yWpsfC5px0LShmn/JS47BiGCJXQ==
+lucide-static@^0.121.0:
+  version "0.121.0"
+  resolved "https://registry.yarnpkg.com/lucide-static/-/lucide-static-0.121.0.tgz#c0bebaab1c98d943ac71373d7ddd4fe4b524a016"
+  integrity sha512-6pudugOPGkLvvrmWb2YQtNC4O8pgbb7/R4fdp5gsK3TXlsA0l8ntLHGxE7v/WRINW/Uxc1NQKXfaCBBBZcbxmQ==
 
 luxon@^2.5.0:
   version "2.5.0"
